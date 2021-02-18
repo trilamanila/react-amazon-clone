@@ -25,6 +25,7 @@ function Login() {
     auth
       .createUserWithEmailAndPassword(email, password)
       .then(auth => {
+        // it successfully created a new user with email and password
         if (auth) {
           history.push("/");
         }
@@ -58,7 +59,13 @@ function Login() {
             onChange={e => setPassword(e.target.value)}
           />
 
-          <button className="login__signInButton">Sign-In</button>
+          <button
+            type="submit"
+            onClick={signIn}
+            className="login__signInButton"
+          >
+            Sign-In
+          </button>
         </form>
 
         <p>
@@ -67,7 +74,9 @@ function Login() {
           Interest-based Ads Notice
         </p>
 
-        <button className="login__registerButton">Create Amazon Account</button>
+        <button onClick={register} className="login__registerButton">
+          Create Amazon Account
+        </button>
       </div>
     </div>
   );
