@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
 
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const signIn = e => {
+    e.preventDefault();
+
+    // firebase login auth
+  };
+
+  const register = e => {
+    e.preventDefault();
+
+    // firebase login auth
+  };
   return (
     <div className="login">
       <Link to="/">
         <img
           className="login__logo"
-          src="https://pngimg.com/uploads/amazon/amazon_PNG25.png"
+          src="http://pngimg.com/uploads/amazon/amazon_PNG3.png"
         />
       </Link>
 
@@ -17,10 +31,18 @@ function Login() {
 
         <form>
           <h5>Email</h5>
-          <input type="text" />
+          <input
+            type="text"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+          />
 
           <h5>Password</h5>
-          <input type="password" />
+          <input
+            type="password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+          />
 
           <button className="login__signInButton">Sign-In</button>
         </form>
