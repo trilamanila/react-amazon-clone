@@ -2,7 +2,7 @@
 
 ![Project Image](public/demo.png)
 
-> Amazon clone live demo here (https://amazon-a490a.web.app/)
+> Amazon clone live demo here (https://fir-ad8ea.web.app/)
 
 ---
 
@@ -18,7 +18,7 @@
 
 ## Description
 
-Amazon clone was created for learning purposes to better understand React. Real time live demo deployed with Firebase. Flexbox and BEM class name convention was used for styling compenents. Responsive payment rails using Stripe
+Amazon clone was created for learning purposes to better understand React. It is a multi page responsive website through React Router. Real time live demo website deployed with Firebase. CSS flexbox, BEM class naming convention, and Material-UI was used for styling compenents. Responsive payment processing with the use of Stripe's API.The backend is handled with Express and Cors middleware and the dataase is hosted on Firebase.
 
 #### Technologies
 
@@ -26,7 +26,6 @@ Amazon clone was created for learning purposes to better understand React. Real 
 - Firebase
 - CSS
 - HTML
-
 
 [Back To The Top](#amazon-clone)
 
@@ -46,22 +45,25 @@ const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 const db = firebaseApp.firestore();
 ```
+
 [Back To The Top](#amazon-clone)
 
 ---
 
 ## References
+
 [Back To The Top](#amazon-clone)
 
 - Twitter - [@trilamanila](https://twitter.com/trilamanila)
 - Website - [Trilamanila](https://trilamanila.com)
+
 ---
 
 ## License
 
 MIT License
 
-Copyright (c) [2021] [Joncin Picol]
+Copyright (c) [2021][joncin picol]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
