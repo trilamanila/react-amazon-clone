@@ -41,6 +41,7 @@ Amazon clone was created for learning purposes to better understand React. It is
 #### Installation
 
 - `git clone https://github.com/trilamanila/amazon`
+- `cd amazon`
 - `npm install`
 
 #### API Reference
