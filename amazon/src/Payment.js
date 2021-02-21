@@ -23,21 +23,24 @@ function Payment() {
   const [clientSecret, setClientSecret] = useState(true);
 
   useEffect(() => {
+    // generate the special stripe secret which allows us to charge a customer
     const getClientSecret = async () => {
       const response = await axios({
         method: "post",
-        //Strip expects the total in currency subunit
+        // Stripe expects the total in a currencies subunits
         url: `/payments/create?total=${getBasketTotal(basket) * 100}`
       });
-
       setClientSecret(response.data.clientSecret);
     };
 
     getClientSecret();
   }, [basket]);
 
+  console.log("THE SECRET IS >>>", clientSecret);
+  console.log("👱", user);
+
   const handleSubmit = async event => {
-    //stripe code
+    // do all the fancy stripe stuff...
     event.preventDefault();
     setProcessing(true);
 
@@ -48,17 +51,33 @@ function Payment() {
         }
       })
       .then(({ paymentIntent }) => {
-        //paymentIntent = payment confirmation
+        // paymentIntent = payment confirmation
+
+        db.collection("users")
+          .doc(user?.uid)
+          .collection("orders")
+          .doc(paymentIntent.id)
+          .set({
+            basket: basket,
+            amount: paymentIntent.amount,
+            created: paymentIntent.created
+          });
 
         setSucceeded(true);
         setError(null);
         setProcessing(false);
+
+        dispatch({
+          type: "EMPTY_BASKET"
+        });
 
         history.replace("/orders");
       });
   };
 
   const handleChange = event => {
+    // Listen for changes in the CardElement
+    // and display any errors as the customer types their card details
     setDisabled(event.empty);
     setError(event.error ? event.error.message : "");
   };
@@ -71,7 +90,6 @@ function Payment() {
         </h1>
 
         {/* Payment section - delivery address */}
-
         <div className="payment__section">
           <div className="payment__title">
             <h3>Delivery Address</h3>
@@ -107,6 +125,8 @@ function Payment() {
             <h3>Payment Method</h3>
           </div>
           <div className="payment__details">
+            {/* Stripe magic will go */}
+
             <form onSubmit={handleSubmit}>
               <CardElement onChange={handleChange} />
 
@@ -123,6 +143,9 @@ function Payment() {
                   <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
                 </button>
               </div>
+
+              {/* Errors */}
+              {error && <div>{error}</div>}
             </form>
           </div>
         </div>
