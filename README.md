@@ -1,6 +1,6 @@
 # Amazon Clone
 
-![Project Image](/public/demo.png)
+![Project Image](amazon/public/demo.png)
 
 > Amazon clone live demo here (https://fir-ad8ea.web.app/)
 
