@@ -26,6 +26,11 @@ Amazon clone was created for learning purposes to better understand React. It is
 - Firebase
 - CSS
 - HTML
+- Express
+- Axios
+- Javascript
+- Cors
+- Stripe
 
 [Back To The Top](#amazon-clone)
 
