@@ -17,7 +17,7 @@ function Home() {
             id={111111}
             title="The Bitcoin Standard"
             price={19.99}
-            image="https://image.slidesharecdn.com/1119473861-thebitcoinstandardbysaifedeanammous-181029155741/95/the-bitcoin-standard-pdf-saifedean-ammous-the-decentralized-alternative-to-central-banking-1-638.jpg?cb=1540828701"
+            image="https://bitcoinexchangeguide.com/wp-content/uploads/2018/08/The-Bitcoin-Standard.jpg"
             alt=""
             rating={5}
           />
