@@ -77,6 +77,8 @@ function Login() {
         <button onClick={register} className="login__registerButton">
           Create Amazon Account
         </button>
+        <h5>Test users username: Test@test.com </h5>
+        <h5>Test password: test123</h5>
       </div>
     </div>
   );
