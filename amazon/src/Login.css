@@ -1,5 +1,5 @@
 .login {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  border: 1px solid lightgray;
+  border: 1px solid hsl(0, 0%, 83%);
   padding: 20px;
 }
 
@@ -37,7 +37,7 @@
 .login__container > form > input {
   height: 30px;
   margin-bottom: 10px;
-  background-color: white;
+  background-color: hsl(0, 1%, 39%);
   width: 98%;
 }
 
@@ -47,13 +47,13 @@
 }
 
 .login__signInButton {
-  background: #f0c14b;
+  background: hsl(43, 85%, 62%);
   border-radius: 2px;
   width: 100%;
   height: 30px;
   border: 1px solid;
   margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
+  border-color: hsl(43, 53%, 43%) hsl(43, 52%, 40%) hsl(43, 53%, 34%);
 }
 
 .login__registerButton {
@@ -62,5 +62,5 @@
   height: 30px;
   border: 1px solid;
   margin-top: 10px;
-  border-color: darkgray;
+  border-color: hsl(0, 0%, 66%);
 }

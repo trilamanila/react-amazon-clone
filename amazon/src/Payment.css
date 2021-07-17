@@ -1,13 +1,13 @@
 .payment {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
 }
 
 .payment__container > h1 {
   text-align: center;
   padding: 10px;
   font-weight: 400;
-  background-color: rgb(234, 237, 237);
-  border-bottom: 1px solid lightgray;
+  background-color: hsl(180, 8%, 92%);
+  border-bottom: 1px solid hsl(0, 0%, 83%);
 }
 
 .payment__container > h1 a {
@@ -18,7 +18,7 @@
   display: flex;
   padding: 20px;
   margin: 0 20px;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid hsl(0, 0%, 83%);
 }
 
 .payment__title {
@@ -40,13 +40,13 @@
 }
 
 .payment__details > form > div > button {
-  background: #f0c14b;
+  background: hsl(43, 85%, 62%);
   border-radius: 2px;
   width: 100%;
   height: 30px;
   border: 1px solid;
   font-weight: bolder;
   margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
-  color: #111;
+  border-color: hsl(43, 53%, 43%) hsl(43, 52%, 40%) hsl(43, 53%, 34%);
+  color: hsl(0, 0%, 7%);
 }

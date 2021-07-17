@@ -1,8 +1,8 @@
 .order {
   padding: 40px;
   margin: 20px 0;
-  border: 1px solid lightgray;
-  background-color: white;
+  border: 1px solid hsl(0, 0%, 83%);
+  background-color: hsl(0, 0%, 100%);
   position: relative;
 }
 
