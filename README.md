@@ -18,7 +18,7 @@
 
 ## Description
 
-Amazon clone was created for learning purposes to better understand React. It is a multi page responsive website through React Router. Real time live demo website deployed with Firebase. CSS flexbox, BEM class naming convention, and Material-UI was used for styling compenents. Responsive payment processing with the use of Stripe's API.The backend is handled with Express and Cors middleware and the dataase is hosted on Firebase.
+Amazon clone was created for learning purposes to better understand React. It is a multi page responsive website through React Router. Real time live demo website deployed with Firebase. CSS flexbox, BEM class naming convention, and Material-UI were used for styling components. Responsive payment processing with the use of Stripe's API.The backend is handled with Express and Cors middleware and the database is hosted on Firebase.
 
 #### Technologies
 
